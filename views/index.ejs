@@ -1,0 +1,97 @@
+<%-include("main");-%>
+<%-include('header');-%>
+<!--------- header end ---------->
+
+    <!-- all catagory -->
+
+<%-include('navbar');-%>
+
+<!-- ------- navbar end ------ -->
+<!-- shop section -->
+<!-- shop section -->
+
+<!-- banner section -->
+<%-include('banner');-%>
+
+<!-- feature section start -->
+
+<div class="container py-16">
+  <div class="w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center">
+<!-- single feature -->
+    <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+      <img src="images/delivery-van-136-956562.png" class="w-12 h-12 object-contain" alt="">
+      <div>
+        <h4 class="font-medium capitalize text-lg">free shipping</h4>
+        <p class="text-gray-500 text-sm">order over $200</p>
+      </div>
+    </div>
+    <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+      <img src="images/cashback-2589851-2160664.jpg" class="w-12 h-12 object-contain" alt="">
+      <div>
+        <h4 class="font-medium capitalize text-lg">money returns</h4>
+        <p class="text-gray-500 text-sm">30 day money return</p>
+      </div>
+    </div>
+    <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+      <img src="images/247-assistance-customer-support-shopping-31228.png" class="w-12 h-12 object-contain" alt="">
+      <div>
+        <h4 class="font-medium capitalize text-lg">24/7 supports</h4>
+        <p class="text-gray-500 text-sm">customer support</p>
+      </div>
+    </div>
+<!-- single feature feature end -->
+  </div>
+</div>
+<!-- feature section end -->
+
+<!---------- two grid start ---------->
+<%-include("top ranking");-%>
+
+<div class="container">
+  <div class="grid grid-cols-2 gap-6">
+    <div class=" bg-gray-200 flex items-center justify-between max-w-full">
+      <div>
+        <h2 class="px-10 text-primary text-xl">30% offer</h2>
+        <p class="mb-1 px-10 text-gray-800 text-2xl capitalize">free shipping</p>
+        <p class=" mb-7 px-10 text-gray-600 text-md capitalize">attructive natural furnirture</p>
+        <div class="px-10">
+          <a href="#"class="bg-primary border border-primary text-white px-5 py-2 font-medium rounded-md hover:bg-transparent hover:text-primary">Shop Now 
+          </a>
+        </div>
+      </div>
+      <img src="images/sofa-1.png" alt="" class="w-60">
+    </div>
+    <div class="bg-gray-300 flex justify-between items-center">
+      <div>
+        <p class="px-10 text-primary text-xl">30% offer</p>
+        <p class="mb-1 px-10 text-gray-800 text-2xl capitalize">free shipping</p>
+        <p class=" mb-7 px-10 text-gray-600 text-md capitalize">attructive natural furnirture</p>
+        <div class="px-10">
+          <a href="#"class="bg-primary border border-primary text-white px-5 py-2 font-medium rounded-md hover:bg-transparent hover:text-primary">Shop Now 
+          </a>
+        </div>
+      </div>
+      <img src="images/sofa-1.png" alt="" class="w-60">
+    </div>
+  </div>
+</div>
+<!---------- two grid end ---------->
+
+<!-- category section -->
+<%-include('category');-%>
+
+<!-- new arrival product -->
+<%-include('arrival-product');-%>
+
+<!-- offer section -->
+<%-include('offer');-%>
+
+<!-- recommended product -->
+<%-include('recommended-product');-%>
+
+<!-- footer -->
+<%-include('footer');-%>
+<!-- bottom footer -->
+<%-include("footer2.ejs");-%>
+  </body>
+</html>

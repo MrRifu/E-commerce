@@ -1,0 +1,531 @@
+<%-include("main");-%>
+<%-include('header');-%>
+<%-include('navbar');-%>
+<div class="container py-4 flex items-center">
+    <a href="shop.ejs" class="text-primary text-base">
+      <i class='bx bxs-home' ></i>
+    </a>
+    <span class="text-sm text-gray-400">
+    <i class='bx bx-chevron-right'></i>
+    </span>
+    <p class="text-gray-400 font-medium">Shop</p>
+</div>
+<!-- shop wrapper start -->
+<div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+    <!-- sidebar start -->
+    <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+      <div class="divide-y devide-gray-200 space-y-5">
+        <!-- category filter -->
+        <div>
+          <h3 class="texl-xl font-medium text-gray-800 mb-3 uppercase">catagories</h3>
+          <div class="space-y-2">
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600 ml-2 cursor-pointer text-lg capitalize">Women</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600 ml-2 cursor-pointer text-lg capitalize">Man</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600 ml-2 cursor-pointer text-lg capitalize">Shoes</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600 ml-2 cursor-pointer text-lg capitalize">Computer</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+          </div>
+          
+        </div>
+        <!-- catagory filter end -->
+        <!-- brand filter start -->
+        <div class="pt-4">
+          <h3 class="texl-xl font-medium text-gray-800 mb-3 uppercase">brands</h3>
+          <div class="space-y-2">
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600 ml-2 cursor-pointer text-lg capitalize">Adidas</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600 ml-2 cursor-pointer text-lg capitalize">Nike</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600 ml-2 cursor-pointer text-lg uppercase">Easy</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+            <!-- single catagory -->
+            <div class="flex items-center">
+              <input type="checkbox" id="sofa" class="text-primary focus:ring-0 rounder cursor-pointer">
+              <label for="sofa" class="text-gray-600  ml-2 cursor-pointer text-lg uppercase">Arong</label>
+              <div class="ml-auto text-gray-600 text-lg">(100)</div>
+            </div>
+            <!-- single catagory end -->
+          </div>
+        </div>
+        <!-- brands filter end -->
+        <!-- price filter start -->
+        <div class="pt-4">
+          <h3 class="texl-xl font-medium text-gray-800 mb-3 uppercase">price</h3>
+          <div class="flex items-center gap-2">
+            <!-- single catagory -->
+            <div class="mt-4 flex items-center">
+              <input type="text" class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-lg rounded shadow-sm" placeholder="min">
+              <span class="mx-3 text-gray-500">-</span>
+              <input type="text" class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-lg rounded shadow-sm" placeholder="max">
+          </div>
+          </div>
+        </div>
+        <!-- size section -->
+          <div class="pt-4">
+            <h3 class="texl-xl font-medium text-gray-800 mb-3 uppercase">size</h3>
+            <div class="size-selector flex items-center gap-3">
+              <input type="radio" name="size" class="hidden" id="size-xs">
+              <label for="size-xs" class="text-lg border border-gray-200 rounded-sm h-8 w-9 flex items-center justify-center cursor-pointer shadow-sm text-gray-600">XS</label>
+              <input type="radio" name="size" class="hidden" id="size-s">
+              <label for="size-s" class="text-lg border border-gray-200 rounded-sm h-8 w-9 flex items-center justify-center cursor-pointer shadow-sm text-gray-600">S</label>
+              <input type="radio" name="size" class="hidden" id="size-m">
+              <label for="size-m" class="text-lg border border-gray-200 rounded-sm h-8 w-9 flex items-center justify-center cursor-pointer shadow-sm text-gray-600">M</label>
+              <input type="radio" name="size" class="hidden" id="size-lg">
+              <label for="size-lg" class="text-lg border border-gray-200 rounded-sm h-8 w-9 flex items-center justify-center cursor-pointer shadow-sm text-gray-600">L</label>
+              <input type="radio" name="size" class="hidden" id="size-xl">
+              <label for="size-xl" class="text-lg border border-gray-200 rounded-sm h-8 w-9 flex items-center justify-center cursor-pointer shadow-sm text-gray-600">XL</label>
+            </div>
+          </div>
+        <!-- size section end --> 
+        <!-- color section start -->
+      <div class="pt-4">
+        <h3 class="texl-xl font-medium text-gray-800 mb-3 uppercase">color</h3>
+        <div class="flex items-center gap-2">
+          <input type="radio" name="color" class="hidden" id="color-red">
+          <label for="color-red" class="text-xs border border-gray-200 rounded-sm  h-8 w-8 cursor-pointer shadow-sm bg-red-700"></label>
+          <input type="radio" name="color" class="hidden" id="color-gray">
+          <label for="color-gray" class="text-xs border border-gray-200 rounded-sm  h-8 w-8 cursor-pointer shadow-sm bg-gray-700"></label>
+          <input type="radio" name="color" class="hidden" id="color-purple">
+          <label for="color-purple" class="text-xs border border-gray-200 rounded-sm  h-8 w-8 cursor-pointer shadow-sm bg-purple-700"></label>
+          <input type="radio" name="color" class="hidden" id="color-green">
+          <label for="color-green" class="text-xs border border-gray-200 rounded-sm  h-8 w-8 cursor-pointer shadow-sm bg-green-700"></label>
+          <input type="radio" name="color" class="hidden" id="color-black">
+          <label for="color-black" class="text-xs border border-gray-200 rounded-sm  h-8 w-8 cursor-pointer shadow-sm bg-black"></label>
+        </div>
+      </div>
+      <!-- color section end -->
+      </div>
+    </div>
+     <!-- sidebar end -->
+
+    <!-- product start -->
+    <div class="col-span-3">
+     <!-- shorting -->
+      <div class="flex items-center mb-6">
+       <select class="w-44  text-sm text-gray-600 px-4 py-3 border-gray-300 shadow-sm rounded focus:ring-primary focus:border-primary">
+         <option>Default shorting</option>
+         <option>Price low-high</option>
+         <option>Price high-low</option>
+         <option> Latest collection</option>
+       </select>
+
+        <div class="flex ml-auto gap-2">
+          <div class="border border-primary h-8 w-9 rounded flex items-center justify-center text-lg bg-primary text-white cursor-pointer">
+            <i class='bx bx-grid-alt ' ></i>
+          </div>
+          <div class="border border-gray-600 h-8 w-9 rounded flex items-center justify-center text-lg text-gray-600 cursor-pointer">
+            <i class='bx bx-list-ul'></i>
+          </div>
+
+        </div>
+        </div>
+        <!-- shorting end -->
+        <!-- product grid start -->
+        <div class="grid grid-cols-3 gap-6">
+         <!-- single product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- product images -->
+        <div class="relative">
+        <div class="absolute items-center flex justify-between pt-3 left-3">
+          <p class="text-white bg-primary px-3 rounded-md text-xl">25%</p>
+        </div>
+        <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+        </div>
+        <!-- product images end -->
+
+        <!-- product content  -->
+        <div class="pt-4 pb-3 px-4">
+        <a href="#">
+          <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+        </a>
+        <div class="items-center mb-1 ">
+          <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+          
+          <p class="text-2xl text-gray-500">$55.00
+            <span class=" text-lg text-gray-500 line-through">$65</span>
+          </p>
+        </div>
+        <div class="flex text-sm text-yellow-400 gap-1">
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span class="text-sm ml-1 text-gray-500">(165)</span>
+        </div>
+        </div>
+        <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+        <!-- product content end -->
+        </div>
+
+        <!-- single product end -->
+          <!-- single product -->
+          <div class="bg-white shadow-md rounded overflow-hidden group">
+            <!-- product images -->
+            <div class="relative">
+              <div class="absolute items-center flex justify-between pt-3 left-3">
+                <p class="text-white bg-primary px-3 rounded-md text-xl">Hot</p>
+              </div>
+              <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+            </div>
+            <!-- product images end -->
+    
+            <!-- product content  -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="#">
+                <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+              </a>
+              <div class="items-center mb-1 ">
+                <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+                
+                <p class="text-2xl text-gray-500">$55.00
+                  <span class="text-lg text-gray-500 line-through">$65</span>
+                </p>
+              </div>
+              <div class="flex text-sm text-yellow-400 gap-1">
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span class="text-sm ml-1 text-gray-500">(165)</span>
+              </div>
+            </div>
+            <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+            <!-- product content end -->
+          </div>
+    
+          <!-- single product end -->
+                <!-- single product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- product images -->
+        <div class="relative">
+        <div class="absolute items-center flex justify-between pt-3 left-3">
+          <p class="text-white bg-primary px-3 rounded-md text-xl">25%</p>
+        </div>
+        <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+        </div>
+        <!-- product images end -->
+
+        <!-- product content  -->
+        <div class="pt-4 pb-3 px-4">
+        <a href="#">
+          <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+        </a>
+        <div class="items-center mb-1 ">
+          <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+          
+          <p class="text-2xl text-gray-500">$55.00
+            <span class="text-lg text-gray-500 line-through">$65</span>
+          </p>
+        </div>
+        <div class="flex text-sm text-yellow-400 gap-1">
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span class="text-sm ml-1 text-gray-500">(165)</span>
+        </div>
+        </div>
+        <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+        <!-- product content end -->
+        </div>
+
+        <!-- single product end -->
+          <!-- single product -->
+          <div class="bg-white shadow-md rounded overflow-hidden group">
+            <!-- product images -->
+            <div class="relative">
+              <div class="absolute items-center flex justify-between pt-3 left-3">
+                <p class="text-white bg-primary px-3 rounded-md text-xl">25% OFF</p>
+                <p class="text-white bg-primary px-3 rounded-md text-sm line-through">10</p>
+              </div>
+              <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+            </div>
+            <!-- product images end -->
+    
+            <!-- product content  -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="#">
+                <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+              </a>
+              <div class="items-center mb-1 ">
+                <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+                
+                <p class="text-2xl text-gray-500">$55.00
+                  <span class="text-lg text-gray-500 line-through">$65</span>
+                </p>
+                
+              </div>
+              <div class="flex text-sm text-yellow-400 gap-1">
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span><i class='bx bxs-star'></i></span>
+                <span class="text-sm ml-1 text-gray-500">(165)</span>
+              </div>
+            </div>
+            <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+            <!-- product content end -->
+          </div>
+    
+          <!-- single product end -->
+              <!-- single product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- product images -->
+        <div class="relative">
+        <div class="absolute items-center flex justify-between pt-3 left-3">
+          <p class="text-white bg-primary px-3 rounded-md text-xl">25%</p>
+        </div>
+        <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+        </div>
+        <!-- product images end -->
+
+        <!-- product content  -->
+        <div class="pt-4 pb-3 px-4">
+        <a href="#">
+          <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+        </a>
+        <div class="items-center mb-1 ">
+          <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+          
+          <p class="text-2xl text-gray-500">$55.00
+            <span class=" text-lg text-gray-500 line-through">$65</span>
+          </p>
+        </div>
+        <div class="flex text-sm text-yellow-400 gap-1">
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span class="text-sm ml-1 text-gray-500">(165)</span>
+        </div>
+        </div>
+        <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+        <!-- product content end -->
+        </div>
+        <!-- single product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- product images -->
+          <div class="relative">
+            <div class="absolute items-center flex justify-between pt-3 left-3">
+              <p class="text-white bg-primary px-3 rounded-md text-xl">25%</p>
+            </div>
+            <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+          </div>
+          <!-- product images end -->
+    
+          <!-- product content  -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="#">
+              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+            </a>
+            <div class="items-center mb-1 ">
+              <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+              
+              <p class="text-2xl text-gray-500">$55.00
+                <span class=" text-lg text-gray-500 line-through">$65</span>
+              </p>
+            </div>
+            <div class="flex text-sm text-yellow-400 gap-1">
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span class="text-sm ml-1 text-gray-500">(165)</span>
+            </div>
+          </div>
+          <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+          <!-- product content end -->
+        </div>
+            <!-- single product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- product images -->
+        <div class="relative">
+        <div class="absolute items-center flex justify-between pt-3 left-3">
+          <p class="text-white bg-primary px-3 rounded-md text-xl">25%</p>
+        </div>
+        <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+        </div>
+        <!-- product images end -->
+
+        <!-- product content  -->
+        <div class="pt-4 pb-3 px-4">
+        <a href="#">
+          <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+        </a>
+        <div class="items-center mb-1 ">
+          <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+          
+          <p class="text-2xl text-gray-500">$55.00
+            <span class=" text-lg text-gray-500 line-through">$65</span>
+          </p>
+        </div>
+        <div class="flex text-sm text-yellow-400 gap-1">
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span class="text-sm ml-1 text-gray-500">(165)</span>
+        </div>
+        </div>
+        <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+        <!-- product content end -->
+        </div>
+        <!-- single product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- product images -->
+          <div class="relative">
+            <div class="absolute items-center flex justify-between pt-3 left-3">
+              <p class="text-white bg-primary px-3 rounded-md text-xl">25%</p>
+            </div>
+            <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+          </div>
+          <!-- product images end -->
+    
+          <!-- product content  -->
+          <div class="pt-4 pb-3 px-4">
+            <a href="#">
+              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+            </a>
+            <div class="items-center mb-1 ">
+              <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+              
+              <p class="text-2xl text-gray-500">$55.00
+                <span class=" text-lg text-gray-500 line-through">$65</span>
+              </p>
+            </div>
+            <div class="flex text-sm text-yellow-400 gap-1">
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span class="text-sm ml-1 text-gray-500">(165)</span>
+            </div>
+          </div>
+          <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+          <!-- product content end -->
+        </div>
+            <!-- single product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- product images -->
+        <div class="relative">
+        <div class="absolute items-center flex justify-between pt-3 left-3">
+          <p class="text-white bg-primary px-3 rounded-md text-xl">25%</p>
+        </div>
+        <img src="images/AFC-Importing-Electronics-1-7-7-16.jpg" class="w-full" alt="">
+        </div>
+        <!-- product images end -->
+
+        <!-- product content  -->
+        <div class="pt-4 pb-3 px-4">
+        <a href="#">
+          <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">guyer chair</h4>
+        </a>
+        <div class="items-center mb-1 ">
+          <p class="font-semibold capitalize text-md mb-2 text-gray-500">queen headboard</p>
+          
+          <p class="text-2xl text-gray-500">$55.00
+            <span class=" text-lg text-gray-500 line-through">$65</span>
+          </p>
+        </div>
+        <div class="flex text-sm text-yellow-400 gap-1">
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span><i class='bx bxs-star'></i></span>
+          <span class="text-sm ml-1 text-gray-500">(165)</span>
+        </div>
+      </div>
+      <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-b border border-primary hover:bg-transparent hover:text-primary transition w-full">Add to cart</a>
+      <!-- product content end -->
+      
+    </div>
+    <div class="justify-center items-end ">
+      <nav aria-label="Page navigation example">
+        <ul class="inline-flex -space-x-px-4">
+          <li>
+            <a href="#" class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-700 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+          </li>
+          <li>
+            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+          </li>
+          <li>
+            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+          </li>
+          <li>
+            <a href="#" aria-current="page" class="px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+          </li>
+          <li>
+            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+          </li>
+          <li>
+            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+          </li>
+          <li>
+            <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>      
+
+  <!-- product grid end -->
+  <!-- pagination -->
+  
+
+
+            
+  </div>
+<!-- product end -->
+
+
+</div> 
+   <!-- shop wrapper end -->
+   <%-include("footer.ejs");-%>
+   <%-include("footer2.ejs");-%>

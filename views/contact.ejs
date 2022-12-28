@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/output.css' />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <%-include("header");-%>
+    <%-include("navbar");-%>
+    <!-- contact start -->
+    <div class="bg-cover bg-no-repeat bg-center w-full py-36" style="background-image:url(images/contact-banner.jpg) ;">
+        <div class="container pb-10">
+            <div class="flex items-center justify-center ">
+              <h1 class="text-4xl text-white font-medium mb-4 capitalize items-center justify-center">Contact Us</h1>
+            </div>
+          <div>
+            <a href="/contact/contact">
+              <ul class="flex items-center justify-center text-white">
+                <a href="/"><li><i class='text-primary bx bxs-home'></i></li></a>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li><p>contact us</p></li>
+              </ul>
+            </a>
+          </div>
+            
+        </div>
+    </div>
+    <div class="bg-slate-100">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-6 pt-16">
+          <div class="col-span-2 bg-white shadow-sm rounded-lg border p-4 pb-9">
+            <h1 class="text-3xl font-semibold capitalize text-gray-700">leave us a message</h1>
+            <p class="text-lg font-normal pb-8">Use the form below to get in touch with the sales team</p>
+            <label for="first_name">
+              <p class="text-lg">First Name
+                <span class="">*</span></p>
+            </label>
+            <input type="text" id="first_name" class="w-full pb-3 rounded-md">
+            <label for="last_name">
+              <p class="pt-2 text-lg text-gray-700">Last Name
+                <span>*</span></p>
+            </label>
+            <input type="text" id="first_name" class=" w-full pb-3 rounded-md">
+            <p class="pt-2 text-lg text-gray-700">Subject
+              <span>*</span></p>
+          </label>
+          <input type="text" id="first_name" class=" w-full pb-3 rounded-md">
+          <p class="pt-2 text-lg text-gray-700">Your massage
+            <span>*</span></p>
+        </label>
+        <textarea name="text" id="country_region" class="w-full rounded-md border border-b-gray-400 "></textarea>
+        <div class="pt-10">
+          <a href="#" class="uppercase text-center text-white py-2 bg-primary text-lg block rounded-md border border-primary hover:bg-transparent hover:text-primary transition w-48">send a message</a>
+
+        </div>
+        
+          </div>
+          <div class="bg-white shadow-sm rounded-lg border p-4 pb-9">
+            <div>
+              <h1 class="text-xl uppercase font-semibold text-gray-600 pb-5">our store</h1>
+              <p class="text-lg text-gray-700 pb-4">
+                <span><i class="px-1 fa-solid fa-location-dot" ></i>
+                  </span>
+                  NM 19800, united States Of Noakhali
+              </p>
+              <p class="text-lg text-gray-700 pb-4">
+                <span><i class="px-1 fa-solid fa-phone"></i></span>
+                +123 456,789 321.
+              </p>
+              <p class="text-lg text-gray-700 pb-6">
+                <span><i class="px-1 fa-solid fa-envelope"></i></span>
+                Rifu@gmail.com
+              </p>
+            </div>
+            <p class="text-xl uppercase font-semibold text-gray-600 pb-5">Hours of operation</p>
+            <div class="flex items-center justify-between text-lg text-gray-700 pb-2 capitalize">
+              <p>saturday</p>
+              <p>12:00 PM</p>
+            </div>
+            <div class="flex items-center justify-between text-lg text-gray-700 pb-2 capitalize">
+              <p>sunday</p>
+              <p>12:00 PM</p>
+            </div>
+            <div class="flex items-center justify-between text-lg text-gray-700 pb-2 capitalize">
+              <p>monday</p>
+              <p>12:00 PM</p>
+            </div>
+            <div class="flex items-center justify-between text-lg text-gray-700 pb-2 capitalize">
+              <p>tuesday</p>
+              <p>12:00 PM</p>
+            </div>
+            <div class="flex items-center justify-between text-lg text-gray-700 pb-2 capitalize">
+              <p>wednesday</p>
+              <p>12:00 PM</p>
+            </div>
+            <div class="flex items-center justify-between text-lg text-gray-700 pb-2 capitalize">
+              <p>thursday</p>
+              <p>12:00 PM</p>
+            </div>
+            <div class="flex items-center justify-between text-lg text-gray-700 pb-4 capitalize">
+              <p>friday</p>
+              <p>12:00 PM</p>
+            </div>
+            <h3 class="text-xl uppercase font-semibold text-gray-600 pb-5">carrers</h3>
+            <p class="text-lg text-gray-700 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, molestiae.</p>
+            <a href="#">
+              <p class="text-lg text-green-500">Rifat@gmail.com</p>
+            </a>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <!-- contact end -->
+    <%-include("footer");-%>
+    <%-include("footer2");-%>
+  </body>
+  </html>

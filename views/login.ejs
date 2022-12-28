@@ -1,0 +1,68 @@
+<%-include("main");-%>
+<%-include("header");-%>
+<%-include("navbar");-%>
+
+<div class="container pb-16">
+    <div class="flex items-center justify-center ">
+        <h1 class="text-4xl text-white font-medium mb-4 capitalize items-center justify-center">Contact Us</h1>
+    </div>
+    <div class="container">
+      <a href="/login">
+        <ul class="flex items-center  text-black">
+          <a href="/"><li><i class='text-primary bx bxs-home'></i></li></a>
+          <li><i class='bx bx-chevron-right'></i></li>
+          <li><p class="text-lg">Login</p></li>
+        </ul>
+      </a>
+    </div>
+    <div class="grid grid-cols-3">
+        <div></div>
+        <div class="bg-white shadow-xl rounded-lg border p-4 pb-16">
+            <h1 class="text-2xl text-gray-800 uppercase font-semibold">Login</h1>
+            <p class="text-lg text-gray-600 py-6">Login if you a a returing customer</p>
+            <label for="first_name">
+                <p class="text-lg text-gray-600">E-mail Address
+                  <span class="">*</span></p>
+              </label>
+              <input type="text" id="first_name" class="w-full pb-3 rounded-md" placeholder="Example@gmail.com">
+              <label for="last_name">
+                <p class="pt-2 text-lg text-gray-600">Password
+                  <span>*</span></p>
+              </label>
+              <input type="text" id="first_name" class=" w-full pb-3 rounded-md" placeholder="Type your password">
+              <div class="flex items-center justify-between py-4">
+                <div class="">
+                    <p class="text-lg text-gray-800 font-semibold">
+                        <span><input type="checkbox" class="py-2 px-2 border border-primary rounded-sm focus:ring-0 hover:bg-primary"></span>
+                        Remember me
+                    </p>
+                </div>
+                <div>
+                    <p class="text-lg text-primary font-semibold">Forgot Password</p>
+                </div>
+              </div>
+              <div class="pt-6">
+                <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-md border border-primary hover:bg-transparent hover:text-primary transition w-full">Login</a>
+            </div>
+            <p class="text-lg items-center justify-center text-gray-600 font-semibold flex py-3 uppercase">or login in with</p>
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <a href="#" class="uppercase text-center text-white py-2 bg-[#3b5999] block rounded-md border border-[#3b5999] hover:bg-transparent hover:text-[#3b5999] transition w-full">facebook</a>
+                </div>
+                <div class="pb-6">
+                  <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-md border border-primary hover:bg-transparent hover:text-primary transition w-full">google</a>
+                </div>
+            </div>
+            <p class="text-lg capitalize items-center justify-center flex">
+                <span>Don't have an account?.</span>
+                <a href="/register" class="text-primary">Register now</a>
+            </p>
+        </div>
+        <div></div>
+    </div>
+</div>
+
+<div class="bg-gray-300">
+    <%-include('footer');-%>
+</div>
+<%-include("footer2");-%>

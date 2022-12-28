@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/output.css' />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+   
+    <%-include("header");-%>
+    <%-include("navbar");-%>
+    <div class="container pb-10">
+      <div class="flex items-center justify-center ">
+        <h1 class="text-4xl text-white font-medium mb-4 capitalize items-center justify-center">Contact Us</h1>
+      </div>
+    <div class="container">
+      <a href="/contact/contact">
+        <ul class="flex items-center  text-black">
+          <a href="/"><li><i class='text-primary bx bxs-home'></i></li></a>
+          <li><i class='bx bx-chevron-right'></i></li>
+          <li><p class="text-lg">Register</p></li>
+        </ul>
+      </a>
+      <div class=" grid grid-cols-3 ">
+        <div></div>
+        <div class="bg-white shadow-sm rounded-lg border p-4">
+          <h1 class="text-gray-800 text-3xl font-semibold uppercase">Create An Account</h1>
+          <p class="text-gray-600 text-lg capitalize">Register here if you are a new customer.</p>
+          <label for="first_name">
+            <p class="text-lg">Full Name
+              <span class="">*</span></p>
+          </label>
+          <input type="text" id="first_name" class="w-full pb-3 rounded-md" placeholder="Md Rifat">
+          <label for="last_name">
+            <p class="pt-2 text-lg text-gray-700">Email Address
+              <span>*</span></p>
+          </label>
+          <input type="text" id="first_name" class=" w-full pb-3 rounded-md" placeholder="Example@gmail.com">
+          <p class="pt-2 text-lg text-gray-700">Password
+            <span>*</span></p>
+          </label>
+          <input type="text" id="first_name" class=" w-full pb-3 rounded-md" placeholder="Type password">
+          <p class="pt-2 text-lg text-gray-700">Confirm Password
+          <span>*</span></p>
+          </label>
+          <input type="text" id="first_name" class=" w-full pb-3 rounded-md" placeholder="confirm your password">
+
+          <div class="pt-6">
+            <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-md border border-primary hover:bg-transparent hover:text-primary transition w-full">Create Account</a>
+          </div>
+          <p class="flex text-lg items-center justify-center py-6 uppercase text-gray-600 ">or signup with in</p>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <a href="#" class="uppercase text-center text-white py-2 bg-[#3b5999] block rounded-md border border-[#3b5999] hover:bg-transparent hover:text-[#3b5999] transition w-full">facebook</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="uppercase text-center text-white py-2 bg-primary block rounded-md border border-primary hover:bg-transparent hover:text-primary transition w-full">google</a>
+            </div>
+          </div>
+          <p class="text-lg capitalize items-center justify-center flex">
+            <span>Already have an account?.</span>
+            <a href="/login" class="text-primary">login now</a>
+          </p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+      
+  </div>
+  </body>
+</html>

@@ -879,6 +879,10 @@ select {
   display: none;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-60 {
   height: 15rem;
 }
